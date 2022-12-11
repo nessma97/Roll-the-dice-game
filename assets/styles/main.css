@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cairo&family=Montserrat+Alternates:ital@1&family=Oswald:wght@300&family=Press+Start+2P&family=Righteous&family=Titan+One&display=swap");
+
+/* start variables*/
+:root {
+  --lost: #ff2e2eef;
+  --won: #57dbfc;
+  --main: #2a2e2d;
+  --main-light: #c1f3ff;
+  --mid-lighter: #1799b3;
+  --lighter: #0a849c;
+}
+/* End varibale */
+
+/* start global rules  */
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  border: medium none;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 200;
+  background-color: var(--main);
+  color: var(--lighter);
+}
+
+/* end global rules */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.guess__heading {
+  margin-block: 2rem;
+  font-size: 2rem;
+  word-spacing: 0.05rem;
+  text-align: center;
+}
+
+.nav__container,
+.game__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-block: 2.3rem;
+}
+
+@media (max-width: 516px) {
+  .nav__container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .game__section {
+    flex-direction: column;
+    margin-block: 3rem;
+  }
+}
+.nav__container button,
+.play__section button {
+  font-size: 1rem;
+  color: var(--main-light);
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+  background-color: var(--lighter);
+}
+.nav__container button:hover,
+.play__section button:hover {
+  background-color: var(--mid-lighter);
+}
+
+@media (max-width: 516px) {
+  .nav__container button {
+    margin-bottom: 2rem;
+  }
+}
+
+.anononmous__num {
+  border-radius: 3px;
+  background-color: var(--lighter);
+  width: 100%;
+}
+.anononmous__num p {
+  text-align: center;
+  padding-block: 0.5rem;
+}
+
+.num__input {
+  padding-block: 0.5rem;
+  color: var(--main);
+  width: 90%;
+}
+
+.play__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guess__btn {
+  margin-top: 1rem;
+  width: 60%;
+}
+
+.result__section p {
+  margin-top: 0.9rem;
+}
+
+.check__number,
+.high__score,
+.score {
+  color: var(--main-light);
+}
