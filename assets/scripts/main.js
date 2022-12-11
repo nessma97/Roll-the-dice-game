@@ -52,6 +52,10 @@ checkBtn.addEventListener("click", function () {
   }
 });
 
+const newFeature = () => {
+  console.log("this is a testing branch");
+};
+
 resetBtn.addEventListener("click", function () {
   score = 20;
   highScore = 0;
